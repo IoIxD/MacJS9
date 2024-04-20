@@ -38,9 +38,7 @@ target_include_directories(MacJS9 PUBLIC src/main)
 
 set_target_properties(MacJS9 PROPERTIES COMPILE_OPTIONS -ffunction-sections)
 if(CMAKE_SYSTEM_NAME MATCHES Retro68)
-    set_target_properties(MacJS9 PROPERTIES LINK_FLAGS "-Wl,-gc-sections -Wl,--mac-strip-macsbug")
-else()
-    set_target_properties(MacJS9 PROPERTIES LINK_FLAGS "-Wl,-gc-sections")
+    set_target_properties(MacJS9 PROPERTIES LINK_FLAGS "-Wl,--mac-strip-macsbug")
 endif()
 
 # this copies all resource files in the build directory

@@ -1,6 +1,6 @@
 # MacJS9
 
-work in progress JavaScript interpeter for Mac OS 9, using Duktape.
+work in progress JavaScript Interpreter for Mac OS 9, using Duktape.
 
 to compile currently, get Retro98, then create a build directory and do
 

@@ -180,7 +180,7 @@
 #define DUK_INTERNAL_H_INCLUDED
 
 /*
- *  The 'duktape.h' header provides the public API, but also handles all
+ *  The 'duktape.hpp' header provides the public API, but also handles all
  *  compiler and platform specific feature detection, Duktape feature
  *  resolution, inclusion of system headers, etc.  These have been merged
  *  because the public API is also dependent on e.g. detecting appropriate
@@ -194,7 +194,7 @@
  */
 
 #define DUK_COMPILING_DUKTAPE
-#include "duktape.h"
+#include "duktape.hpp"
 
 /*
  *  Duktape includes (other than duk_features.h)
@@ -8981,7 +8981,7 @@ struct duk_hproxy {
 #if !defined(DUK_HEAP_H_INCLUDED)
 #define DUK_HEAP_H_INCLUDED
 
-/* alloc function typedefs in duktape.h */
+/* alloc function typedefs in duktape.hpp */
 
 /*
  *  Heap flags
@@ -10089,7 +10089,7 @@ DUK_INTERNAL_DECL duk_bool_t duk_fb_is_full(duk_fixedbuffer *fb);
 #define DUK_ERROR_H_INCLUDED
 
 /*
- *  Error codes: defined in duktape.h
+ *  Error codes: defined in duktape.hpp
  *
  *  Error codes are used as a shorthand to throw exceptions from inside
  *  the implementation.  The appropriate ECMAScript object is constructed
